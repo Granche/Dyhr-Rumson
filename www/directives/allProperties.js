@@ -6,7 +6,7 @@ app.directive('allProperties', [function() {
       
       Bostad.get(function(data){
         if(data.length<=0) {
-          Bostad.create(lagenheter)
+          Bostad.create(bostader)
         }
         $scope.bostader = data;
         
