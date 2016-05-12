@@ -1,0 +1,46 @@
+<br> <br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-24">
+      <div class="container-fluid sap_tabs">
+        <div class="row">
+          <div class="col-md-24">
+              <ul class="resp-tabs-list">
+                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Alla Bostäder</span></li>
+                <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Lägenheter</span></li>
+                <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Villor</span></li>
+                <div class="clearfix"></div>
+              </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-24 col-md-24">
+            <div class="tab-1 container-fluid">
+              <div class="row">
+                <div class="col-xs-24 col-md-8" ng-repeat="bostad in bostader" ng-click="openModal()">
+                  <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt=""/>
+                  <div class="box_type">{{bostad.pris}}&nbsp;kr</div>
+                  <h3 class="m_1"><a ng-href="/bostad/{{bostad._id}}">{{bostad.adress}}</a></h3>
+                  <div class="boxed_mini_details">
+                    <span class="area first">
+                      <strong>Garage</strong>
+                      <i class="fa fa-car fa-lg"></i> {{bostad.antalGarage}}
+                    </span>
+                    <span class="status">
+                      <strong>Badrum</strong>
+                      <i class="fa fa-retweet icon1"> </i> {{bostad.antalBadrum}}
+                    </span>
+                    <span class="bedrooms last">
+                      <strong>Sovrum</strong>
+                      <i class="fa fa-building-o icon1"></i> {{bostad.antalRum}}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

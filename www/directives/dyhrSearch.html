@@ -1,0 +1,39 @@
+<div class="details">
+  <div class="container-fluid">
+    <div class="col-xs-24 col-md-24 dropdown-buttons">
+      <div class="col-xs-6 col-md-6 dropdown-button">
+        <div class="section_room">
+          <select id="country" onchange="change_country(this.value)" class="frm-field required">
+            <option ng-repeat="stad in stader"> </option>
+            <!-- Här hamnar städer -->
+          </select>
+        </div>
+      </div>
+      <div class="col-xs-6 col-md-6 dropdown-button">
+        <div class="section_room">
+          <select id="country" onchange="change_country(this.value)" class="frm-field required">
+            <option value="null">Alla typer av Bostäder</option>
+            <option value="AX">Lägenhet</option>
+            <option value="AX">Villa</option>
+          </select>
+      </div>
+    </div>
+    <div class="col-xs-6 col-md-6 dropdown-button">
+      <div class="section_room">
+        <select id="country" onchange="change_country(this.value)" class="frm-field required">
+          <option value="null">Alla Priser</option>
+          <option value="null">0kr - 125 000kr</option>
+          <option value="AX">125 000kr - 500 000kr</option>
+          <option value="AX">500 000kr - 1 000 000kr</option>
+          <option value="AX">Mer än 1 000 000kr</option>
+        </select>
+      </div>
+    </div>
+  <div class="col-xs-6 col-md-4 submit_button">
+    <form>
+      <input type="submit" value="Sök">
+    </form>
+  </div>
+  </div>
+</div>
+</div>

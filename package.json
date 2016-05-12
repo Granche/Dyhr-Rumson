@@ -1,0 +1,10 @@
+{
+  "name": "angularAppbase",
+  "version": "0.0.2",
+  "dependencies": {
+    "mongresto": "*",
+    "cookie-parser": "*",
+    "gulp": "*",
+    "gulp-less": "*"
+  }
+}

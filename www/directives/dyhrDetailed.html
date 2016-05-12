@@ -1,0 +1,49 @@
+
+<div class="container-fluid">
+  <div class="standards">
+    <ul class="selectors_wrapper">
+      <li class="selector active" data-selector="1">Bilder</li>
+      <li class="selector" data-selector="2">Location</li>
+      <li class="selector" data-selector="3">Kontakt</li>
+    </ul>
+
+
+    <div class="standard_content" style="height: 439px;">
+      <div class="standard active" data-selector="1">
+        <ul class="single_grid">
+          <a class="fancybox" data-fancybox-group="gallery" title="husbilder">
+            <li class="img-responsive">{{hus.bilder}}</li>
+          </a>
+        <div class="clearfix"> </div>
+        </ul> 
+      </div>
+
+      <div class="standard" data-selector="2">
+        <div class="map1">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9016.537496783807!2d13.007255!3d55.599675!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x92281499f47ed62e!2sLernia+Malm%C3%B6!5e0!3m2!1sen!2sse!4v1461247286158" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="clearfix"> </div>
+      <div class="clearfix"> </div>
+      <div class="clearfix"> </div>
+
+      <div class="standard" data-selector="3">
+        <div class="standard_content" style="height: 439px;">
+          <div class="contact_box">
+          </div>    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="col-md-12">
+    <ul class="single_box">
+      <li><i class="fa fa-building-o icon1"> </i> {{hus.antalRum}} Sovrum</li>
+      <li><i class="fa fa-bed"> </i> {{hus.antalBadrum}} Badrum</li>
+      <li><i class="fa fa-car fa"> </i> {{hus.antalGarage}} Garage</li> 
+    </ul>
+    <p class="single_box">{{hus.info}}</p>
+  </div>
+</div>
