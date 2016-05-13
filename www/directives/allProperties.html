@@ -17,8 +17,8 @@
           <div class="col-xs-24 col-md-24">
             <div class="tab-1 container-fluid">
               <div class="row">
-                <div class="col-xs-24 col-md-8" ng-repeat="bostad in bostader" ng-click="openModal()">
-                  <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt=""/>
+                <div class="col-xs-24 col-md-8" ng-repeat="bostad in bostader" >
+                  <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt="/" ng-click="openModal(bostad)">
                   <div class="box_type">{{bostad.pris}}&nbsp;kr</div>
                   <h3 class="m_1"><a ng-href="/bostad/{{bostad._id}}">{{bostad.adress}}</a></h3>
                   <div class="boxed_mini_details">
