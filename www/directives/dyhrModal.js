@@ -5,8 +5,8 @@ app.directive('dyhrModal', [function() {
     controller: ['$scope', '$uibModal',"Bostad", function($scope, $uibModal, Bostad) {
       
       
-      $scope.openModal = function() {
 
+      $scope.openModal = function() {
         // create a new modal with the following settings
         var modalInstance = $uibModal.open({
           animation: true, // animate show/hide
@@ -18,6 +18,7 @@ app.directive('dyhrModal', [function() {
           backdrop: 'static',
           // make our modal large
           size: 'lg',
+          
         });
     
         modalInstance.result.then(function (selectedOption) {

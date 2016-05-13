@@ -1,6 +1,6 @@
 // the controller for the modal itself
 // (separate from underlying view/directive)
-app.controller('myModalInstance', ['$scope', '$uibModalInstance',"Bostad", function($scope, $uibModalInstance, Bostad) {
+app.controller('myModalInstance', ['$scope', '$uibModalInstance', function($scope, $uibModalInstance) {
   
   
   $scope.ok = function() {
@@ -16,11 +16,5 @@ app.controller('myModalInstance', ['$scope', '$uibModalInstance',"Bostad", funct
     // (modalInstance.result.then(...))
     $uibModalInstance.dismiss();
   };
-
-  $scope.getHus = function () {
-    Bostad.get(function(data){
-      $scope.hus = data
-    })
-  }
  
 }]);
