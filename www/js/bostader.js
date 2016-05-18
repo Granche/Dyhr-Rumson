@@ -3,7 +3,7 @@ var bostader = [
 	"egenID": 1,    					
 	"region": "Stockholm", 				
 	"stad": {                         
-		"name": "huddinge",				
+		"namn": "huddinge",				
 		"region": "Skåne"         
 		}, 
 	"adress": "branta backen", 	
@@ -29,7 +29,7 @@ var bostader = [
 	"egenID": 2,    					
 	"region": "Skåne", 				
 	"stad": {                          
-		"name": "simrishamn",					
+		"namn": "simrishamn",					
 		"region": "Skåne"         
 		}, 
 	"adress": "dalgatan", 	
@@ -56,7 +56,7 @@ var bostader = [
 	"egenID": 3,    					
 	"region": "Stockholms region", 				
 	"stad": {                          
-		"name": "duvnäs udde",					
+		"namn": "duvnäs udde",					
 		"region": "Skåne"         
 		}, 
 	"adress": "duvnäs udde", 	
@@ -83,7 +83,7 @@ var bostader = [
 	"egenID": 4,    					
 	"region": "staffanstorp", 				
 	"stad": {                          
-		"name": "vissmarslöv",					
+		"namn": "vissmarslöv",					
 		"region": "Skåne"         
 		}, 
 	"adress": "dalgatan", 	
@@ -109,7 +109,7 @@ var bostader = [
 	"egenID": 5,    					
 	"region": "Limhamn", 				
 	"stad": {                          
-		"name": "Malmö",					
+		"namn": "Malmö",					
 		"region": "Skåne"         
 		}, 
 	"adress": "entitevägen", 	
@@ -135,7 +135,7 @@ var bostader = [
 	"egenID": 6,    					
 	"region": "båstad", 				
 	"stad": {                          
-		"name": "ängelholm",					
+		"namn": "ängelholm",					
 		"region": "Skåne"         
 		}, 
 	"adress": "korrödsvägen", 	
@@ -161,7 +161,7 @@ var bostader = [
 	"egenID": 7,    					
 	"region": "Holma", 				
 	"stad": {                          
-		name: "Malmö",					
+		namn: "Malmö",					
 		"region": "Skåne"         
 		}, 
 	adress: "humlebäcksgatan", 	
@@ -187,7 +187,7 @@ var bostader = [
 	"egenID": 8,    					
 	"region": "gustavsberg", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
 	adress: "skeviksgatan", 	
@@ -213,7 +213,7 @@ var bostader = [
 	"egenID": 9,    					
 	"region": "Riviera", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
 	adress: "gröngölingsgatan 4", 	
@@ -239,7 +239,7 @@ var bostader = [
 	"egenID": 10,    					
 	"region": "gustavsberg", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
 	adress: "skeviksgatan", 	
@@ -265,7 +265,7 @@ var bostader = [
 	"egenID": 11,    					
 	"region": "mansdala kristianstad", 				
 	"stad": {                          
-		name: "kristianstad",					
+		namn: "kristianstad",					
 		"region": "Skåne"         
 		}, 
 	adress: "mansdala bygatan", 	
@@ -291,8 +291,8 @@ var bostader = [
 	"egenID": 12,    					
 	"region": "svartsjö", 				
 	"stad": {                          
-		name: "Stockholm",					
-		"region": "Skåne"         
+		namn: "Stockholm",					
+		"region": "Stockholm"         
 		}, 
 	adress: "plogvägen", 	
 	typAvBostad: "Villa",           
@@ -317,7 +317,7 @@ var bostader = [
 	"egenID": 13,    					
 	"region": "Skåne", 				
 	"stad": {                          
-		name: "Malmö",					
+		namn: "Malmö",					
 		"region": "Skåne"         
 		}, 
 	adress: "saarisvägen", 	
@@ -343,7 +343,7 @@ var bostader = [
 	"egenID": 14,    					
 	"region": "Huddungeby", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
 	adress: "sillbo 145", 	
@@ -369,7 +369,7 @@ var bostader = [
 	"egenID": 15,    					
 	"region": "skåne", 				
 	"stad": {                          
-		name: "simrishamn",					
+		namn: "simrishamn",					
 		"region": "Skåne"         
 		}, 
 	adress: "dalgatan 37", 	

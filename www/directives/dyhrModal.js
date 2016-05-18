@@ -18,6 +18,7 @@ app.directive('dyhrModal', [function() {
           backdrop: 'static',
           // make our modal large
           size: 'lg',
+
           resolve: {
             bostad: bostad
           }

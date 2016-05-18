@@ -4,7 +4,6 @@ app.controller('myModalInstance', ['$scope', '$uibModalInstance',"bostad", funct
   
   $scope.bostad = bostad;
 
-  console.log(bostad)
   $scope.ok = function() {
     // user approves om seleted option
     // so send the selected option back to the myModal directive
