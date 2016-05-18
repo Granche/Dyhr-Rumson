@@ -11,9 +11,11 @@ app.directive('dyhrCarousel', [function () {
       var currIndex = 0;
 
       $scope.addSlide = function() {
-        var newWidth = 600 + slides.length + 1;
+
         slides.push({
-          image: 'http://lorempixel.com/' + newWidth + '/300',
+          imageStyle: {
+            'background-image': 'url(/img/' + (currIndex + 1) + ".jpg)"
+          },
           text: ['Nice image','Awesome photograph','That is so cool','I love that'][slides.length % 4],
           id: currIndex++
         });

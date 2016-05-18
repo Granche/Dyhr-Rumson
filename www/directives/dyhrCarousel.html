@@ -8,8 +8,10 @@
     ng-repeat="slide in slides track by slide.id" 
     index="slide.id" 
     >
-      <img ng-src="{{slide.image}}" style="height:800px"> 
-  
+      <!-- <img ng-src="{{slide.image}}" style="height:800px"> --> 
+      <div class="dyhrSlideImg" ng-style="slide.imageStyle">
+        
+      </div>
 
     </uib-slide>
   </uib-carousel>
