@@ -6,9 +6,9 @@
         <div class="row">
           <div class="col-md-24">
               <ul class="resp-tabs-list">
-                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab" ng-click="getAll()"><span>Alla Bostäder</span></li>
-                <li class="resp-tab-item" aria-controls="tab_item-1" role="tab" ng-click="getAppartments()"><span>Lägenheter</span></li>
-                <li class="resp-tab-item" aria-controls="tab_item-2" role="tab" ng-click="getHouses()"><span>Villor</span></li>
+                <li class="resp-tab-item allaBostader" aria-controls="tab_item-0" role="tab" ng-click="getAll()">Alla Bostäder</li>
+                <li class="resp-tab-item lagenheter" aria-controls="tab_item-1" role="tab" ng-click="getAppartments()"><span>Lägenheter</span></li>
+                <li class="resp-tab-item villor" aria-controls="tab_item-2" role="tab" ng-click="getHouses()"><span>Villor</span></li>
                 <div class="clearfix"></div>
               </ul>
           </div>
@@ -17,7 +17,7 @@
           <div class="col-xs-24 col-md-24">
             <div class="tab-1 container-fluid">
               <div class="row">
-                <div class="col-xs-24 col-md-8" ng-repeat="bostad in bostader" >
+                <div class="col-xs-24 col-md-7 bostadsmoduler" ng-repeat="bostad in bostader" >
                   <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt="/" ng-click="openModal(bostad)">
                   <div class="box_type">{{bostad.pris}}&nbsp;kr</div>
                   <h3 class="m_1"><a ng-href="/bostad/{{bostad._id}}">{{bostad.adress}}</a></h3>
