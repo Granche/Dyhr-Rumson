@@ -4,7 +4,8 @@ app.directive('dyhrListings', [function () {
     templateUrl: '/directives/dyhrListings.html',
     controller: ['$scope',"Bostad", function($scope, Bostad) {
       Bostad.get(function(data) {
-        data.forEach(function(data) {
+        /*data.forEach(function(data) {
+        
         if(data.info.length > 120) {
           
           var str = data.info.split("");
@@ -13,7 +14,8 @@ app.directive('dyhrListings', [function () {
           str = str+"[...]";
           data.info = str;
         }
-      })
+        
+      })*/
           $scope.bostader = data;        
       })
     }]
