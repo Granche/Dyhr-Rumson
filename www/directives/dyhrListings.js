@@ -16,7 +16,7 @@ app.directive('dyhrListings', [function () {
         }
         
       })*/
-          $scope.bostader = data;        
+          $scope.bostader = data;  
       })
     }]
   };
