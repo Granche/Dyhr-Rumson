@@ -3,17 +3,17 @@ var bostader = [
 	"egenID": 1,    					
 	"region": "Stockholm", 				
 	"stad": {                         
-		"name": "huddinge",				
+		"namn": "Huddinge",				
 		"region": "Skåne"         
 		}, 
-	"adress": "branta backen", 	
+	"adress": "Branta backen", 	
 	"typAvBostad": "Villa",           
 	"pris": 6350000, 					
 	"hyra": 4350,
 	antalRum: 3,
 	antalBadrum: 2,
 	antalGarage: 1,
-	"info": "2 plans Villa", 
+	"info": "2 plans Villa lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum", 
 	"bilder": ["../img/v1.jpg","../img/v11.jpg","../img/v111.jpg"],
 	"våning": 3,
 	"harBalkong": true,
@@ -29,17 +29,17 @@ var bostader = [
 	"egenID": 2,    					
 	"region": "Skåne", 				
 	"stad": {                          
-		"name": "simrishamn",					
+		"namn": "Simrishamn",					
 		"region": "Skåne"         
 		}, 
-	"adress": "dalgatan", 	
+	"adress": "Dalgatan", 	
 	"typAvBostad": "Villa",           
 	"pris": 1745000, 					
 	"hyra": 3650,
 	antalRum: 3,
 	antalBadrum: 2,
 	antalGarage: 1,
-	"info": "2 plans Villa", 
+	"info": "2 plans Villa lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum", 
 	"bilder": ["../img/v2.jpg","../img/v22.jpg","../img/v222.jpg"],
 
 	"våning": 3,
@@ -56,10 +56,10 @@ var bostader = [
 	"egenID": 3,    					
 	"region": "Stockholms region", 				
 	"stad": {                          
-		"name": "duvnäs udde",					
+		"namn": "Duvnäs udde",					
 		"region": "Skåne"         
 		}, 
-	"adress": "duvnäs udde", 	
+	"adress": "Duvnäs udde", 	
 	"typAvBostad": "Villa",           
 	"pris": 17000000, 					
 	"hyra": 44444,
@@ -81,9 +81,9 @@ var bostader = [
 },
 {
 	"egenID": 4,    					
-	"region": "staffanstorp", 				
+	"region": "Staffanstorp", 				
 	"stad": {                          
-		"name": "vissmarslöv",					
+		"namn": "Vissmarslöv",					
 		"region": "Skåne"         
 		}, 
 	"adress": "dalgatan", 	
@@ -109,10 +109,10 @@ var bostader = [
 	"egenID": 5,    					
 	"region": "Limhamn", 				
 	"stad": {                          
-		"name": "Malmö",					
+		"namn": "Malmö",					
 		"region": "Skåne"         
 		}, 
-	"adress": "entitevägen", 	
+	"adress": "Entitevägen", 	
 	"typAvBostad": "Villa",           
 	"pris": 7495000, 					
 	"hyra": 1000,
@@ -133,12 +133,12 @@ var bostader = [
 },
 {
 	"egenID": 6,    					
-	"region": "båstad", 				
+	"region": "Båstad", 				
 	"stad": {                          
-		"name": "ängelholm",					
+		"namn": "Ängelholm",					
 		"region": "Skåne"         
 		}, 
-	"adress": "korrödsvägen", 	
+	"adress": "Korrödsvägen", 	
 	"typAvBostad": "Villa",           
 	"pris": 3995000, 					
 	"hyra": 12000,
@@ -161,10 +161,10 @@ var bostader = [
 	"egenID": 7,    					
 	"region": "Holma", 				
 	"stad": {                          
-		name: "Malmö",					
+		namn: "Malmö",					
 		"region": "Skåne"         
 		}, 
-	adress: "humlebäcksgatan", 	
+	adress: "Humlebäcksgatan", 	
 	typAvBostad: "Villa",           
 	pris: 5300000, 					
 	hyra: 1500,
@@ -185,12 +185,12 @@ var bostader = [
 },
 {
 	"egenID": 8,    					
-	"region": "gustavsberg", 				
+	"region": "Gustavsberg", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
-	adress: "skeviksgatan", 	
+	adress: "Skeviksgatan", 	
 	typAvBostad: "Villa",           
 	pris: 2300000, 					
 	hyra: 4500,
@@ -213,10 +213,10 @@ var bostader = [
 	"egenID": 9,    					
 	"region": "Riviera", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
-	adress: "gröngölingsgatan 4", 	
+	adress: "Gröngölingsgatan 4", 	
 	typAvBostad: "Villa",           
 	pris: 5100000, 					
 	hyra: 1900,
@@ -237,12 +237,12 @@ var bostader = [
 },
 {
 	"egenID": 10,    					
-	"region": "gustavsberg", 				
+	"region": "Gustavsberg", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
-	adress: "skeviksgatan", 	
+	adress: "Skeviksgatan", 	
 	typAvBostad: "Villa",           
 	pris: 2300000, 					
 	hyra: 6500,
@@ -263,12 +263,12 @@ var bostader = [
 },
 {
 	"egenID": 11,    					
-	"region": "mansdala kristianstad", 				
+	"region": "Mansdala Kristianstad", 				
 	"stad": {                          
-		name: "kristianstad",					
+		namn: "Kristianstad",					
 		"region": "Skåne"         
 		}, 
-	adress: "mansdala bygatan", 	
+	adress: "Mansdala bygatan", 	
 	typAvBostad: "Villa",           
 	pris: 750000, 					
 	hyra: 1500,
@@ -289,12 +289,12 @@ var bostader = [
 },
 {
 	"egenID": 12,    					
-	"region": "svartsjö", 				
+	"region": "Svartsjö", 				
 	"stad": {                          
-		name: "Stockholm",					
-		"region": "Skåne"         
+		namn: "Stockholm",					
+		"region": "Stockholm"         
 		}, 
-	adress: "plogvägen", 	
+	adress: "Plogvägen", 	
 	typAvBostad: "Villa",           
 	pris: 4875000, 					
 	hyra: 10000,
@@ -317,10 +317,10 @@ var bostader = [
 	"egenID": 13,    					
 	"region": "Skåne", 				
 	"stad": {                          
-		name: "Malmö",					
+		namn: "Malmö",					
 		"region": "Skåne"         
 		}, 
-	adress: "saarisvägen", 	
+	adress: "Saarisvägen", 	
 	typAvBostad: "Villa",           
 	pris: 2000000, 					
 	hyra: 9560,
@@ -343,10 +343,10 @@ var bostader = [
 	"egenID": 14,    					
 	"region": "Huddungeby", 				
 	"stad": {                          
-		name: "Stockholm",					
+		namn: "Stockholm",					
 		"region": "Skåne"         
 		}, 
-	adress: "sillbo 145", 	
+	adress: "Sillbo 145", 	
 	typAvBostad: "Villa",           
 	pris: 2100000, 					
 	hyra: 4500,
@@ -367,12 +367,12 @@ var bostader = [
 },
 {
 	"egenID": 15,    					
-	"region": "skåne", 				
+	"region": "Skåne", 				
 	"stad": {                          
-		name: "simrishamn",					
+		namn: "Simrishamn",					
 		"region": "Skåne"         
 		}, 
-	adress: "dalgatan 37", 	
+	adress: "Dalgatan 37", 	
 	typAvBostad: "Villa",           
 	pris: 1300000, 					
 	hyra: 4577,
