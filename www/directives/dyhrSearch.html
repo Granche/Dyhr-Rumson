@@ -3,12 +3,12 @@
 <div class="btn-group" role="group">
   <div class="dropdown dropdown-lg">
     <!-- dropdown knappen ng-click="toggleWells()"--> 
-    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-click="toggleDropdown()">Sök Här <span class="caret"></span></button>
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-click="toggleDropdown()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Sök Här <span class="caret"></span></button>
 
 
 
     <div class="dropdown-menu dropdown-menu-center" role="menu" id="dropsearch">
-      <form class="form-inline" role="form">
+      <form class="form-horizontal" role="form">
 
         <div class="form-group">
 
@@ -136,9 +136,10 @@
         </div>
 
         
+        <!-- searchQuery knapp -->
+        <button type="submit" class="btn btn-primary" ng-click="startQuery()">Sök Nu&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         <!-- resetQuery knapp -->
-        <button type="submit" class="btn btn-primary" ng-click="startQuery()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-        <button type="submit" class="btn btn-primary" ng-click="resetQuery()"><span class="fa fa-refresh" aria-hidden="true"></span></button>
+        <!-- <button type="submit" class="btn btn-primary" ng-click="resetQuery()"><span class="fa fa-refresh" aria-hidden="true"></span></button> -->
       </form>
     </div>
   </div>
