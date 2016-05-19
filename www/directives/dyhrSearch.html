@@ -1,39 +1,198 @@
-<div class="details">
-  <div class="container-fluid">
-    <div class="col-xs-24 col-md-24 dropdown-buttons">
-      <div class="col-xs-6 col-md-6 dropdown-button">
-        <div class="section_room">
-          <select id="country" onchange="change_country(this.value)" class="frm-field required">
-            <option ng-repeat="stad in stader"> </option>
-            <!-- Här hamnar städer -->
+
+
+<div class="btn-group" role="group">
+  <div class="dropdown dropdown-lg">
+    <!-- dropdown knappen ng-click="toggleWells()"--> 
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" ng-click="toggleDropdown()"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>&nbsp;Sök Här <span class="caret"></span></button>
+
+
+
+    <div class="dropdown-menu dropdown-menu-center" role="menu" id="dropsearch">
+      <form class="form-horizontal" role="form">
+
+        <div class="form-group">
+
+          <select ng-model="townSel" class="form-control">
+            <option value="" selected>Bostadstyp</option>
+            <option value="">Alla</a></option>
+            <option value="Villor">Villor</option>
+
+            <option value="Lägenhet">Lägenhet</option>
+
           </select>
         </div>
-      </div>
-      <div class="col-xs-6 col-md-6 dropdown-button">
-        <div class="section_room">
-          <select id="country" onchange="change_country(this.value)" class="frm-field required">
-            <option value="null">Alla typer av Bostäder</option>
-            <option value="AX">Lägenhet</option>
-            <option value="AX">Villa</option>
+
+
+
+        <div class="form-group">
+
+          <select ng-model="minAreaSel" class="form-control">
+            <option value="" selected>Område</option>
+            <option value="Kirseberg">Kirseberg</option>
+            <option value="Dalaplan">Dalaplan</option>
+            <option value="Limhamn">Limhamn</option>
+            <option value="Rosengård">Rosengård</option>
+            <option value="Centrum">Centrum</option>
           </select>
-      </div>
+        </div>
+
+        <div class="form-group">
+          <select ng-model="minPriceSel" class="form-control">
+
+            <option value="" selected>Minsta Pris</option>
+            <option value="400000">400 000</option>
+            <option value="500000">500 000</option>
+            <option value="750000">750 000</option>
+            <option value="1000000">1 000 000</option>
+            <option value="1250000">1 250 000</option>
+            <option value="1500000">1 500 000</option>
+            <option value="3000000">3 000 000</option>
+            <option value="3500000">3 500 000</option>
+            <option value="5500000">5 500 000</option>
+            <option value="25000000">25 000 000</option>
+            <option value="35000000">35 000 000</option>
+          </select>
+
+
+
+
+        </div>
+
+        <div class="form-group">
+          <select ng-model="maxPriceSel" class="form-control">
+
+            <option value="" selected>Högsta Pris</option>
+            <option value="400000">400 000</option>
+            <option value="500000">500 000</option>
+            <option value="750000">750 000</option>
+            <option value="1000000">1 000 000</option>
+            <option value="1250000">1 250 000</option>
+            <option value="1500000">1 500 000</option>
+            <option value="3500000">3 500 000</option>
+            <option value="4000000">4 000 000</option>
+            <option value="4500000">4 500 000</option>
+            <option value="5000000">5 000 000</option>
+            <option value="9000000">9 000 000</option>
+            <option value="10000000">10 000 000</option>
+            <option value="35000000">35 000 000</option>
+          </select>
+
+
+        </div>
+
+        <div class="form-group">
+          <select ng-model="maxRoomSel" class="form-control">
+
+            <option value="" selected>Rum</option>
+            <option value="1">minst 1 rum</option>
+            <option value="2">minst 2 rum</option>
+            <option value="3">minst 3 rum</option>
+            <option value="4">minst 4 rum</option>
+            <option value="5">minst 5 rum</option>
+            <option value="6">minst 6 rum</option>
+            <option value="7">minst 7 rum</option>
+            <option value="8">minst 8 rum</option>
+            <option value="9">minst 9 rum</option>
+            <option value="10">minst 10 rum</option>
+            <option value="11">minst 11 rum</option>
+            <option value="12">minst 12 rum</option>
+            <option value="14">minst 13 rum</option>
+            <option value="14">minst 14 rum</option>
+            <option value="15">minst 15 rum</option>
+
+
+          </select>
+
+
+        </div>
+
+        <div class="form-group">
+          <select ng-model="minSizeSel" class="form-control">
+
+            <option value="">Boarea</option>
+            <option value="30">minst 30 m2</option>
+            <option value="50">minst 50 m2</option>
+            <option value="80">minst 80 m2</option>
+            <option value="100">minst 100 m2</option>
+            <option value="200">minst 200 m2</option>
+            <option value="300">minst 300 m2</option>
+            <option value="400">minst 400 m2</option>
+            <option value="500">minst 500 m2</option>
+            <option value="600">minst 600 m2</option>
+            <option value="700">minst 700 m2</option>
+            <option value="800">minst 800 m2</option>
+            <option value="900">minst 900 m2</option>
+            <option value="1000">minst 1000 m2</option>
+            <option value="1100">minst 1100 m2</option>
+            <option value="1200">minst 1200 m2</option>
+            <option value="1300">minst 1300 m2</option>
+            <option value="1400">minst 1400 m2</option>
+            <option value="1500">minst 1500 m2</option>
+
+
+          </select>
+
+
+        </div>
+
+        
+        <!-- searchQuery knapp -->
+        <button type="submit" class="btn btn-primary" ng-click="startQuery()">Sök Nu&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+        <!-- resetQuery knapp -->
+        <!-- <button type="submit" class="btn btn-primary" ng-click="resetQuery()"><span class="fa fa-refresh" aria-hidden="true"></span></button> -->
+      </form>
     </div>
-    <div class="col-xs-6 col-md-6 dropdown-button">
-      <div class="section_room">
-        <select id="country" onchange="change_country(this.value)" class="frm-field required">
-          <option value="null">Alla Priser</option>
-          <option value="null">0kr - 125 000kr</option>
-          <option value="AX">125 000kr - 500 000kr</option>
-          <option value="AX">500 000kr - 1 000 000kr</option>
-          <option value="AX">Mer än 1 000 000kr</option>
-        </select>
-      </div>
-    </div>
-  <div class="col-xs-6 col-md-4 submit_button">
-    <form>
-      <input type="submit" value="Sök">
-    </form>
-  </div>
   </div>
 </div>
-</div>
+
+<!-- Split button -->
+
+<!--
+<div class="col-xs-24">
+      <h3>Query results ({{results.length}} items)</h3>
+      <div class="panel panel-info">
+        results from search 
+        <table class="table table-hover">
+          <tr>
+            <th>
+              Adress
+            </th>
+            <th>
+              Område
+            </th>
+            <th>
+              Pris
+            </th>
+            <th>
+              Rum
+            </th>
+            <th>
+            Bo yta
+            </th>
+          </tr>
+          <tr ng-repeat="result in results">
+            <td>
+              {{result.address}}
+            </td>
+            <td>
+              {{result.area}}
+            </td>
+            <td>
+              {{result.price}}
+            </td>
+            <td>
+              {{result.rooms}}
+            </td>
+            <td>
+            
+              {{result.size}} kvm
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>-->

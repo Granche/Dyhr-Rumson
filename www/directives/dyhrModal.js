@@ -1,7 +1,7 @@
 app.directive('dyhrModal', [function() {
 
   return {
-    templateUrl: '/directives/dyhrModal.html',
+    //templateUrl: '/directives/dyhrModal.html',
     controller: ['$scope', '$uibModal', function($scope, $uibModal) {
       
 
