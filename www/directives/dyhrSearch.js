@@ -40,7 +40,7 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         }, 2000);
       };
     },
-    controller: ['$scope', 'Home', function($scope, Home) {
+    controller: ['$scope', 'Bostad', function($scope, Bostad) {
 
       // code originally from
       // src: http://lernia.nodebite.se/sokfiltrera-bygg-mongo-queries-fran-select-input/
@@ -115,7 +115,7 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         // Debug, check how the query looks
         console.log(JSON.stringify(query,'','  '));
         // Query the database through a ngResource object
-        $scope.results = Home.get(query, function() {
+        $scope.results = Bostad.get(query, function() {
           // run the "highlight" function from link
           // to show users if the search worked or not
           $scope.highlight();
