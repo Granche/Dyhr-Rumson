@@ -1,8 +1,8 @@
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-5 searchmodule" ng-repeat="bostad in bostader" ng-click="openModal()">
-      <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt=""/>
-      <h4><strong>{{bostad.adress}} </strong>, {{Bostad.stad.namn}}</h4>
+  <div class="row" dyhr-modal>
+    <div class="col-md-5 searchmodule" ng-repeat="bostad in bostader" ng-click="openModal(bostad)">
+      <img ng-src="{{bostad.bilder[0]}}" class="img-responsive" alt="/">
+      <h4><strong>{{bostad.adress}} , {{bostad.stad.namn}}</strong></h4>
       <p>{{bostad.info}}</p>
     </div>
   </div>

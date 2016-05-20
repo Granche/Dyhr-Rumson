@@ -7,7 +7,15 @@
   margin-top: 2%;   
 }
 .searchmodule {
-  margin: 1%
+  margin: 1%;
+  height: 280px;
+  overflow: hidden;
+  p {
+    max-height: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 .container-fluid {
   padding-left: 0;
@@ -20,47 +28,45 @@
 .navbar {
   max-height: 64px;
 }
+
 .navbar-collapse {
 }
 
 .navbar-nav {
   font-size: 1.8em;
-  width: 80%;
+  margin-left: 1%;
 }
-.navbar-nav > li {
-  margin-left: 7%;
-}
-.carouselHeight{
-  margin-top: -2.2em;
-}
+
+
 .details {
   margin-top: 0;
 }
 .logopic {
   z-index: 10;
 }
+
+#om-oss-flik {
+  margin-top: 100px;  
+}
+
 .allaBostäder {
-font-size: bold;
-color: red;
+  font-size: bold;
+  color: red;
+  text-decoration:underline;
 }
 .lägenheter {
   font-size: bold;
   color: red;
+  text-decoration:underline;
 }
 .villor {
   font-size: bold;
   color: red;
+  text-decoration:underline;
 }
 ul li:hover { 
     background: #00CC33;
 }
-.row.vdivide [class*='col-']:not(:last-child):after {
-  background: #00CC33;
-  width: 2px;
-  content: " ";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.row.vdivide .resp-tab-item:not(:last-child) {
+  border-right: 2px solid #00CC33;
 }
- 

@@ -1,7 +1,7 @@
 app.directive('dyhrModal', [function() {
 
   return {
-    templateUrl: '/directives/dyhrModal.html',
+    //templateUrl: '/directives/dyhrModal.html',
     controller: ['$scope', '$uibModal', function($scope, $uibModal) {
       
 
@@ -18,6 +18,7 @@ app.directive('dyhrModal', [function() {
           backdrop: 'static',
           // make our modal large
           size: 'lg',
+
           resolve: {
             bostad: bostad
           }
