@@ -9,12 +9,12 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
       scope.toggleDropdown = function(){
         //Hide/show wells
         //slideToggle is a jQuery method to hide/show elements
-        elem.find('.dropdown-menu').slideToggle(700);
+        elem.find('.dropdown-menu').slideToggle(900);
         
          //Change button text (example of using "elem")
         var btn = elem.find('.dropdown-toggle');
         btn.html(
-          btn.html().indexOf('Hide') >= 0 ? 'Visa search!': 'Gömm search!'
+          btn.html().indexOf('Hide') >= 0 ? 'Sök ': 'Sök '
         );
          
       };
