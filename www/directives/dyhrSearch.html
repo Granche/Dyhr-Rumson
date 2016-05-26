@@ -15,9 +15,9 @@
           <select ng-model="townSel" class="form-control">
             <option value="" selected>Bostadstyp</option>
             <option value="">Alla</a></option>
-            <option value="Villor">Villor</option>
+            <option value="Villa">Villor</option>
 
-            <option value="Lägenhet">Lägenhet</option>
+            <option value="Bostadsrättslägenhet">Lägenheter</option>
 
           </select>
         </div>
@@ -30,7 +30,7 @@
             <option value="" selected>Område</option>
             <option value="Alla">Alla</option>
             <option value="Malmö">Malmö</option>
-            <option value="Trelleborg">Trelleborg</option>
+            <option value="Stockholm">Stockholm</option>
             <option value="Lund">Lund</option>
             <option value="Helsinborg">Helsinborg</option>
             
@@ -96,28 +96,6 @@
 
         </div>
 
-        <div class="form-group">
-          <select ng-model="minSizeSel" class="form-control">
-
-            <option value="">Boarea</option>
-            <option value="30">30 m2</option>
-            <option value="50">50 m2</option>
-            <option value="80">80 m2</option>
-            <option value="100">100 m2</option>
-            <option value="150">150 m2</option>
-            <option value="200">250 m2</option>
-            <option value="350">350 m2</option>
-            <option value="500">500 m2</option>
-            <option value="700">700 m2</option>
-            <option value="1000">1000 m2</option>
-           
-
-          </select>
-
-
-        </div>
-
-        
         <!-- searchQuery knapp -->
         <button type="submit" class="btn btn-success" ng-click="startQuery()">Sök Nu&nbsp;<span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
         <!-- resetQuery knapp -->

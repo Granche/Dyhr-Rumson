@@ -49,37 +49,23 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
       // what they correspond to in your mongoose model
       var options = {
         townSel: {
-          modelHome: "type",
+          modelHome: "typAvBostad",
           type: String,
           operator: "$eq"
         },
-
-        minAreaSel: {
-          modelHome: "area",
-          type: String,
-          operator: "$eq"
-        },
-
         minPriceSel: {
-          modelHome: "price",
+          modelHome: "pris",
           type: Number,
           operator: "$gte"
         },
 
         maxPriceSel: {
-          modelHome: "price",
+          modelHome: "pris",
           type: Number,
           operator: "$lte"
-        },
-        
-          minSizeSel: {
-          modelHome: "size",
-          type: Number,
-          operator: "$gte"
-        },
-        
+        }, 
         maxRoomSel: {
-          modelHome: "rooms",
+          modelHome: "antalRum",
           type: Number,
           operator: "$gte"
         }
@@ -118,6 +104,7 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         $scope.results = Bostad.get(query, function() {
           // run the "highlight" function from link
           // to show users if the search worked or not
+          console.log($scope.results)
           $scope.highlight();
         });
       };

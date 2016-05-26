@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" >
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <!-- use ng-init + ng-click to make nav collapsible -->
@@ -16,38 +16,30 @@
 
     <!-- ng-class assigns the collapsed "in" class whenever appropriate -->
     <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
-      <ul class="nav navbar-nav pull-left">
+      <ul class="nav navbar-nav pull-right">
         <!-- no links yet... -->
         
     
         <li> 
           <a class="active" href="/"><i class="fa fa-home"> </i> Hem</a>
-          </li>
-          <li>
-            <a href="/om-oss"><i class="fa fa-star"> </i> Om oss</a>
-          </li>
-          <li>
-            <a href="/fastigheter"><i class="fa fa-building-o"> </i> Fastigheter </a>
-          </li>
-          <!-- <li><a href="gallery.html"><i class="fa fa-picture-o"> </i>Gallery</a></li> -->
-          <li>
-            <a href="/kontakt"><i class="fa fa-envelope-o"> </i> Kontakt</a>
-          </li>
-           <li>
-            <a href="/vara-saljare"><i class="fa fa-envelope-o"> </i> Våra Säljare</a>
-          </li>
+        </li>
+        <li>
+          <a href="/om-oss"><i class="fa fa-star"> </i> Om oss</a>
+        </li>
+        <li>
+          <a href="/fastigheter"><i class="fa fa-building-o"> </i> Fastigheter </a>
+        </li>
+        <!-- <li><a href="gallery.html"><i class="fa fa-picture-o"> </i>Gallery</a></li> -->
+        <li>
+          <a href="/kontakt"><i class="fa fa-envelope-o"> </i> Kontakt</a>
+        </li>
+         <li>
+          <a href="/vara-saljare"><i class="fa fa-envelope-o"> </i> Våra Säljare</a>
+        </li>
           
-          <dyhr-search> </dyhr-search>
+        <dyhr-search> </dyhr-search>
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
-
-
-
-
-
-
