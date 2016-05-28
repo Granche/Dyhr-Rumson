@@ -59,7 +59,7 @@ var bostader = [
 		"namn": "Duvnäs udde",					
 		"region": "Skåne"         
 		}, 
-	"adress": "Duvnäs udde", 	
+	"adress": "Supergatan 5B", 	
 	"typAvBostad": "Villa",           
 	"pris": 17000000, 					
 	"hyra": 44444,
@@ -86,7 +86,7 @@ var bostader = [
 		"namn": "Vissmarslöv",					
 		"region": "Skåne"         
 		}, 
-	"adress": "dalgatan", 	
+	"adress": "Dalgatan", 	
 	"typAvBostad": "Villa",           
 	"pris": 3495000, 					
 	"hyra": 2151,
@@ -521,7 +521,7 @@ var bostader = [
 	"region": "Västra Götaland",
 	"stad": {
 		"namn": "Borås",
-		"region": this.region
+		"region": "Västra Götaland"
 	},
 	"adress": "Fjällgatan 54 B",
 	"typAvBostad": "Bostadsrättslägenhet",
@@ -598,7 +598,7 @@ var bostader = [
 		"namn": "Kista",
 		"region": "Dalarna",
 	},
-	"adress": "Sorögatan 17, SV",
+	"adress": "Sorögatan 17A",
 	"typAvBostad": "Bostadsrättslägenhet",
 	"pris": 1795000,
 	"hyra": 3772,

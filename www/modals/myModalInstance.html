@@ -8,7 +8,7 @@
           <img ng-src="{{bostad.bilder[0]}}" class="img-responsive">
        </div>
        <div class="col-md-6 col-xs-12">
-          <h3> {{bostad.pris}} </h3> <hr style="width: 100%; height: 4px; background-color:#00CC33;" />
+          <h3> {{bostad.pris | currency: "Kr "}} </h3> <hr style="width: 100%; height: 4px; background-color:#00CC33;" />
           <h4> {{bostad.antalRum}} Sovrum, {{bostad.antalBadrum}} Badrum</h4> <hr style="width: 100%; height: 4px; background-color:#00CC33;" />
           
           <p> {{bostad.info}}</p>
