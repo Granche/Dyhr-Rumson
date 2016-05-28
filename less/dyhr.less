@@ -1,3 +1,7 @@
+body {
+    margin: 10px;
+}
+
 .hshhh {
   color: white;
   font-size: 2em;
@@ -21,8 +25,9 @@
 }
 .searchmodule {
   margin: 1%;
-  height: 280px;
-  overflow: hidden;
+  height: 100%;
+  
+  
 }
 .container-fluid {
   padding-left: 0;
@@ -32,21 +37,35 @@
   position: static;
   margin-left: 10%;
 }
+
+img {
+  vertical-align: middle;
+}
+
 .navbar {
   max-height: 64px;
+
 }
-.navbar-default .navbar-collapse ul {
-  background: #F8F8F8;  
-}
+
 .navbar-collapse {
   z-index: 115;
 }
 
-.navbar-nav {
-  font-size: 1.8em;
-  margin-left: 1%;
-   
+.dropdown-menu {
+     position: absolute; 
+     }
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    margin-right: 109px;
+    margin-left: -20px;
 }
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
+.navbar-default .navbar-collapse ul  {
+    background: #F8F8F8;
+    }
 
 
 .details {
