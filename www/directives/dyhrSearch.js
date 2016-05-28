@@ -21,11 +21,11 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
 
       // depending on if we got results
       scope.highlight = function() {
-        var className = scope.results.length > 0 ? 'has-success' : 'has-error';
+        var className = scope.bostader.length > 0 ? 'has-success' : 'has-error';
 
-        console.log(scope.results);
+        console.log(scope.bostader);
 
-        $rootScope.results = scope.results;
+        $rootScope.bostader = scope.bostader;
 
         $location.path("/fastigheter");
 
@@ -101,10 +101,10 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         // Debug, check how the query looks
         console.log(JSON.stringify(query,'','  '));
         // Query the database through a ngResource object
-        $scope.results = Bostad.get(query, function() {
+        $scope.bostader = Bostad.get(query, function() {
           // run the "highlight" function from link
           // to show users if the search worked or not
-          console.log($scope.results)
+          console.log($scope.bostader)
           $scope.highlight();
         });
       };
