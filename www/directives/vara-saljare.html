@@ -1,16 +1,13 @@
-<div class="container-fluid">
+<div class="container-fluid marketing">
 	<div class="row">
-		<div class="col-xs-24 col-md-24 visitkort" ng-repeat="seller in saljare">
-			<div class="col-xs-2 col-md-2">
-			<img src="{{seller.pic}}">
-			</div>
-			<div class="col-xs-12 col-md-12">
-				<h2>{{seller.namn}}</h2>
-				<h4>{{seller.tlf}}</h4>
-				<h4>{{seller.email}}</h4>
-				<h4>{{seller.region}}</h4>
-				<p>{{seller.info}}</p>
-			</div>
-		</div>	
+   	<div class="col-xs-6" ng-repeat="seller in saljare">
+    	<img class="img-circle" src="{{seller.pic}}" alt="" width="140" height="140">  <br /><br />
+      <h5>{{seller.namn}}</h5>
+      <h5>{{seller.region}}</h5>
+      <p>{{seller.email}} , {{seller.tlf}}</p>
+      <p>{{seller.info}}</p>
+	  </div> 		
 	</div>
 </div>
+
+
