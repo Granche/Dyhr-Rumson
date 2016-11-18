@@ -9,23 +9,23 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
       scope.toggleDropdown = function(){
         //Hide/show wells
         //slideToggle is a jQuery method to hide/show elements
-        elem.find('.dropdown-menu').slideToggle(700);
+        elem.find('.dropdown-menu').slideToggle(900);
         
          //Change button text (example of using "elem")
         var btn = elem.find('.dropdown-toggle');
         btn.html(
-          btn.html().indexOf('Hide') >= 0 ? 'Visa search!': 'Gömm search!'
+          btn.html().indexOf('Hide') >= 0 ? 'Sök ': 'Sök '
         );
          
       };
 
       // depending on if we got results
       scope.highlight = function() {
-        var className = scope.results.length > 0 ? 'has-success' : 'has-error';
+        var className = scope.bostader.length > 0 ? 'has-success' : 'has-error';
 
-        console.log(scope.results);
+        console.log(scope.bostader);
 
-        $rootScope.results = scope.results;
+        $rootScope.bostader = scope.bostader;
 
         $location.path("/fastigheter");
 
@@ -40,7 +40,7 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         }, 2000);
       };
     },
-    controller: ['$scope', 'Home', function($scope, Home) {
+    controller: ['$scope', 'Bostad', function($scope, Bostad) {
 
       // code originally from
       // src: http://lernia.nodebite.se/sokfiltrera-bygg-mongo-queries-fran-select-input/
@@ -49,37 +49,23 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
       // what they correspond to in your mongoose model
       var options = {
         townSel: {
-          modelHome: "type",
+          modelHome: "typAvBostad",
           type: String,
           operator: "$eq"
         },
-
-        minAreaSel: {
-          modelHome: "area",
-          type: String,
-          operator: "$eq"
-        },
-
         minPriceSel: {
-          modelHome: "price",
+          modelHome: "pris",
           type: Number,
           operator: "$gte"
         },
 
         maxPriceSel: {
-          modelHome: "price",
+          modelHome: "pris",
           type: Number,
           operator: "$lte"
-        },
-        
-          minSizeSel: {
-          modelHome: "size",
-          type: Number,
-          operator: "$gte"
-        },
-        
+        }, 
         maxRoomSel: {
-          modelHome: "rooms",
+          modelHome: "antalRum",
           type: Number,
           operator: "$gte"
         }
@@ -115,9 +101,10 @@ app.directive('dyhrSearch', ['$rootScope', '$location', function ($rootScope, $l
         // Debug, check how the query looks
         console.log(JSON.stringify(query,'','  '));
         // Query the database through a ngResource object
-        $scope.results = Home.get(query, function() {
+        $scope.bostader = Bostad.get(query, function() {
           // run the "highlight" function from link
           // to show users if the search worked or not
+          console.log($scope.bostader)
           $scope.highlight();
         });
       };

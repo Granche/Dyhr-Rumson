@@ -24,7 +24,7 @@ app.config(['$locationProvider', '$routeProvider', function($locationProvider, $
 	.when('/vara-saljare', {
 		templateUrl: '/templates/vara-saljare.html'
 	})
-	.otherwise('/', {
+	.otherwise({
 		templateUrl: '/templates/404.html'
 	})
 

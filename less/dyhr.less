@@ -1,3 +1,16 @@
+.hshhh {
+  color: white;
+  font-size: 2em;
+}
+
+.hsh-container {
+  background: url(../img/home-sweet-home.jpg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .img-responsive {
   display: initial;
   width: 100%;
@@ -8,7 +21,7 @@
 }
 .searchmodule {
   margin: 1%;
-  height: 280px;
+  height: 300px;
   overflow: hidden;
   p {
     max-height: 90px;
@@ -16,6 +29,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+  height: 100%;
+  
+  
 }
 .container-fluid {
   padding-left: 0;
@@ -25,17 +41,40 @@
   position: static;
   margin-left: 10%;
 }
+
+img {
+  vertical-align: middle;
+}
+
 .navbar {
   max-height: 64px;
+
 }
 
 .navbar-collapse {
+  z-index: 115;
 }
 
-.navbar-nav {
-  font-size: 1.8em;
-  margin-left: 1%;
+.dropdown-menu {
+     position: absolute; 
+     }
+
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+    
+    margin-left: -20px;
 }
+.navbar-collapse.in {
+    
+}
+
+.row {
+     margin-left: 15px;
+     margin-right: 15px;
+}
+
+.navbar-default .navbar-collapse ul  {
+    background: #F8F8F8;
+    }
 
 
 .details {
@@ -46,7 +85,7 @@
 }
 
 #om-oss-flik {
-  margin-top: 100px;  
+  margin-top: 0px;  
 }
 
 .allaBostäder {
@@ -66,9 +105,18 @@
 }
 ul li:hover { 
     background: #87d54d;
+    background: #87D54D;
 }
-.row.vdivide .resp-tab-item:not(:last-child) {
-  border-right: 2px solid #00CC33;
+
+
+.navbar-default {
+  z-index:1000;
+}
+.pull-right {
+}
+.img-circle {
+  height: 120px;
+  width: 120px;
 }
 
 .bostadsmoduler {
