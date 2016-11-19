@@ -7,6 +7,8 @@ app.directive('allProperties', [function() {
         if(data.length<=0) {
           Bostad.create(bostader)
         }
+
+        console.log(data);
         $scope.bostader = data;
       });
 
@@ -28,8 +30,15 @@ app.directive('allProperties', [function() {
         })   
       };
 
+      $scope.sortera = function(arr,propName){
+        arr.sort(function(a,b){
+          return a[propName] > b[propName] ? 1 : -1;
+        });
+
+      }
 
 
-    }] // End controller
+
+    }] 
   }
 }])

@@ -17,6 +17,29 @@
     </div>
   </div>
   <div class="row">
+    <div class="btn-group col-xs-12 col-xs-offset-6" data-toggle="buttons">
+      <label class="btn btn-success" ng-click='sortera(bostader, "pris")'>
+        Sortera efter pris: 
+        <input type="radio">
+        <span class="glyphicon glyphicon-ok"></span>
+      </label>
+      <label class="btn btn-primary" ng-click='sortera(bostader, "adress")'>
+        Sortera efter adress: 
+        <input type="radio">
+        <span class="glyphicon glyphicon-ok"></span>
+      </label>      
+      <label class="btn btn-info" ng-click='sortera(bostader, "hyra")'>
+      Sortera efter hyra: 
+        <input type="radio">
+        <span class="glyphicon glyphicon-ok"></span>
+      </label>
+      <label class="btn btn-default active" ng-click='sortera(bostader, "antalBadrum")'>
+        Sortera efter antal badrum: 
+        <input type="radio">
+        <span class="glyphicon glyphicon-ok"></span>
+      </label>
+    </div>
+  <div class="row">
     <div class="col-xs-24 col-md-24">
       <div class="tab-1 container-fluid">
         <div class="row" dyhr-modal>
